@@ -1,10 +1,11 @@
-# Jogo da Velha em Java
+# Jogo da Velha em Java - Ambiente Grafico com Swing
 
-Este é um projeto simples de Jogo da Velha (Tic-Tac-Toe) desenvolvido em Java.
+Este é um projeto simples de Jogo da Velha (Tic-Tac-Toe) desenvolvido em Java com uma interface gráfica utilizando Swing.
 Ele suporta dois modos de jogo: dois jogadores humanos ou um jogador contra o computador.
 
 ## Funcionalidades
 
+- **Interface Gráfica:** Interface intuitiva e amigável construída com Java Swing.
 - **Dois modos de jogo:**
   - Dois jogadores humanos alternando entre X e O.
   - Um jogador humano contra o computador, com o jogador podendo escolher quem começa.
@@ -19,10 +20,7 @@ Ele suporta dois modos de jogo: dois jogadores humanos ou um jogador contra o co
 
 ```
 JogoDVelha/
-├── TicTacToe.java        # Classe principal do jogo
-├── TicTacToeGame.java    # Interface de linha de comando para jogar
-├── TicTacToeTest.java    # Testes automatizados
-├── TicTacToeDemo.java    # Demonstração avançada
+├── TicTacToe.java        # Classe principal com a interface gráfica (GUI)
 └── README.md             # Este arquivo
 ```
 
@@ -39,30 +37,20 @@ javac *.java
 
 ### Execução
 
-#### Para jogar:
+Para iniciar o jogo com a interface gráfica:
 ```bash
-java TicTacToeGame
-```
-
-#### Para executar os testes:
-```bash
-java TicTacToeTest
-```
-
-#### Para ver a demonstração avançada:
-```bash
-java TicTacToeDemo
+java TicTacToe
 ```
 
 ## Como Jogar
 
-1. **Escolha o modo de jogo:**
+1. **Inicie o jogo:** Execute o programa para abrir a janela do jogo.
+2. **Escolha o modo de jogo:**
    - Dois jogadores humanos.
    - Jogador contra computador.
-2. **Faça suas jogadas:**
-   - Digite as coordenadas no formato "linha coluna" (exemplo: `1 1` para o centro).
-   - As coordenadas válidas são 0, 1 e 2.
-3. **Objetivo:**
+3. **Faça suas jogadas:**
+   - Clique com o mouse na célula do tabuleiro onde deseja jogar.
+4. **Objetivo:**
    - Alinhe três símbolos iguais (horizontal, vertical ou diagonal).
    - Evite que o oponente faça três em linha.
 
@@ -79,7 +67,6 @@ java TicTacToeDemo
 
 ## Melhorias Futuras
 
-- **Interface Gráfica (GUI):** Usar JavaFX ou Swing para criar uma interface visual.
 - **Níveis de dificuldade:** Implementar estratégias mais avançadas para o computador.
 - **Modo online:** Permitir que dois jogadores joguem remotamente.
 - **Jogo tridimensional:** Expandir para um tabuleiro 4x4x4.

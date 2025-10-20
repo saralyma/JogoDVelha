@@ -304,6 +304,18 @@ public class TicTacToe {
         
         return sb.toString();
     }
+/**
+     * Obtém o valor de uma célula específica do tabuleiro.
+     * @param row A linha da célula.
+     * @param col A coluna da célula.
+     * @return O valor da célula (X, O ou EMPTY).
+     */
+    public Cell getCell(int row, int col) {
+        return board[row][col];
+    }
+
+
+
     
     // Getters
     public Cell getCurrentPlayer() { return currentPlayer; }
